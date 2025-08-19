@@ -13,7 +13,7 @@ public class g {
         while (flag==1) {
             
         
-        System.out.print("Choose an airthmetci operation:\n1. Addition\n2. Subtraction\n3. Multiplication\n4. Division\n5.Exit\n");
+        System.out.print("Choose an operation:\n1. Addition\n2. Subtraction\n3. Multiplication\n4. Division\n5.Exit\n");
         int x = sc.nextInt();
 
         switch (x) {
@@ -30,14 +30,14 @@ public class g {
                 if (num2 != 0) {
                     System.out.println("Result: " + ((double) num1 / num2));
                 } else {
-                    System.out.println("Error: Division by zero is not allowed.");
+                    System.out.println("Error");
                 }
                 break;
             case 5:
                  System.out.println("Exiting");
                  flag=0;
             default:
-                System.out.println("Invalid operation selected.");
+                System.out.println("Invalid");
         }
     }
     sc.close();    
